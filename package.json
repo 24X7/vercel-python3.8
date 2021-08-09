@@ -1,0 +1,29 @@
+{
+  "name": "@24X7/vercel-python3.8",
+  "version": "1.2.3",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "homepage": "",
+  "files": [
+    "dist",
+    "now_init.py"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/24X7/vercel-python3.8.git"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "./build.sh",
+    "prepublishOnly": "./build.sh"
+  },
+  "devDependencies": {
+    "@types/execa": "^0.9.0",
+    "@vercel/ncc": "0.24.0",
+    "execa": "^1.0.0",
+    "typescript": "3.9.3"
+  },
+  "dependencies": {
+    "@vercel/build-utils": "^2.5.4"
+  }
+}

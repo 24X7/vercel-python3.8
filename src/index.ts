@@ -164,7 +164,7 @@ export const build = async ({
   );
 
   // Use the system-installed version of `python3` when running via `vercel dev`
-  const runtime = meta.isDev ? 'python3' : 'python3.8';
+  const runtime = 'python3.8';
 
   const globOptions: GlobOptions = {
     cwd: workPath,
